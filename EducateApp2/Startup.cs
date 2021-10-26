@@ -26,6 +26,7 @@ namespace EducateApp2
 
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<AppCtx>();
+
             services.AddControllersWithViews();
         }
 

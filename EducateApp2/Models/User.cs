@@ -6,6 +6,7 @@ namespace EducateApp2.Models
     public class User : IdentityUser
     {
         //дополнительные поля для каждого пользователя
+        //сообщение об ошибке валидации на стороне клиента
         [Required(ErrorMessage = "Введите фамилию")]
         [Display(Name = "Фамилия")]
 
@@ -20,5 +21,8 @@ namespace EducateApp2.Models
         [Display(Name = "Отчество")]
 
         public string Patronymic { get; set; }
+
+        //навигационные свойства
+
     }
 }
